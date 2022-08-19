@@ -9,18 +9,18 @@ function follow(){
      var barra, barraAtiva
      barra = createSprite(principal.x+80,principal.y -20, 150,20);
      barra.shapeColor = color("white")
-     barra.visible = false
+//      barra.visible = false
 
      barraAtiva= createSprite(barra.x, barra.y, 145,15)
      barraAtiva.shapeColor = color("#00FF00")
-     barraAtiva.visible = false
+//      barraAtiva.visible = false
      barraAtiva.depth = barra.depth+1
      barraAtiva.depth = principal.depth-1
      barra.depth = principal.depth-1
     pop()
-     if(keyIsDown(81)){
-        barra.visible = true
-        barraAtiva.visible = true
+//      if(keyIsDown(81)){
+//         barra.visible = true
+//         barraAtiva.visible = true
      }
 
  }
